@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void) {
+	gugu();
+	return 0;
+}
+
+int gugu(void) {
+	int i, j, input;
+
+	printf("원하시는 숫자를 적어주세요.(1~9): ");
+	scanf_s("%d", &input);
+
+	for(i = input; i <= 9; i++) {
+		for (j = 1; j <= 9; j++) {
+			printf("%dX%d=%d ", i, j, i * j);
+		}
+		printf("\n");
+	}
+
+}
